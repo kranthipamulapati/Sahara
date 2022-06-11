@@ -1,9 +1,17 @@
 const app = Vue.createApp({
     data : function() {
-        return {};
+        return {
+            Username : "",
+            Password : "",
+        };
     },
     methods : {
-
+        login : function(e) {
+            e.preventDefault();
+        },
+        signup : function(e) {
+            e.preventDefault();
+        }
     }
 });
 

@@ -8,8 +8,22 @@
 
 body {
     margin : 0;
+    height: 100vh;
 }
 
 button {
     cursor : pointer;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Login */
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
