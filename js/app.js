@@ -12,6 +12,11 @@ const app = Vue.createApp({
         signup : function(e) {
             e.preventDefault();
         }
+    },
+    computed : {
+        fullName : function() {
+            return this.Username;
+        }
     }
 });
 

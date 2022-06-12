@@ -17,12 +17,12 @@
     <body>
 
         <div id="app">
-            <h1>Sahara</h1>
+            <h1>Sahara {{fullName}}</h1>
             <form id="loginForm">
-                <input id="Username" type="text"     placeholder="Username" required />
-                <input id="Password" type="password" placeholder="Password" required />
-                <button v-on:click="login" type="submit" id="login">Login</button>
-                <button v-on:click="signup" type="submit" id="signUp">Sign Up</button>
+                <input  v-model="Username"  type="text"     placeholder="Username" required />
+                <input  v-model="Password"  type="password" placeholder="Password" required />
+                <button v-on:click="login"  type="submit">Login</button>
+                <button v-on:click="signup" type="submit">Sign Up</button>
             </form>
         </div>
         
